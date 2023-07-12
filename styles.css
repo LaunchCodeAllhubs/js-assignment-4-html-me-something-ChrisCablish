@@ -7,11 +7,14 @@
     box-sizing: border-box;
 }
 
+header,
+footer {
+    background-color: #AAD455;
+    padding: 8px;
+}
+
 body {
     display: block;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     text-align: center;
     min-height: 100vh;
     gap: 5rem;
@@ -19,18 +22,15 @@ body {
     margin: 8px;
 }
 
-#mainHeading {
-    color: red;
-}
-
-header,
-footer {
+main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    padding: 3rem 1.5rem;
     background-color: #AAD455;
-    padding: 8px;
-}
-
-.funParagraph {
-    color: green;
+    margin: 3rem auto;
 }
 
 .headline__and__hero {
@@ -40,27 +40,33 @@ footer {
     align-items: center;
 }
 
-.hero__wrapper {
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
 img.hero {
     height: 15rem;
     width: 15rem;
     
 }
 
+.hero__wrapper {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#mainHeading {
+    color: red;
+}
+
+
+.funParagraph {
+    color: green;
+}
+
 article {
-    /* display: none; */
     width: 30%;
     border-radius: 1rem;
     padding: 1.5rem 1.5rem;
     background-color: #AAD455;
     margin: 3rem auto;
 }
-
-
 
 .synopsis__and__image {
     display: flex;
@@ -73,9 +79,7 @@ article {
     
 }
 
-
 .article__img__wrapper {
-    /* border-radius: 1rem; */
     overflow: hidden;
     background-image: url(/images/oliver_article.jpg);
     height: 10rem;
@@ -89,16 +93,5 @@ article {
     flex: 2;
 }
 
-main {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    /* border: 1px solid black; */
-    border-radius: 1rem;
-    padding: 3rem 1.5rem;
-    /* background-color:  #6B8672; */
-    background-color: #AAD455;
-    margin: 3rem auto;
-}
+
 
